@@ -4,7 +4,7 @@
   "metadata": {
     "name": "cakephp-hello-world-private",
     "annotations": {
-      "openshift.io/display-name": "CakePHP Hello World",
+      "openshift.io/display-name": "CakePHP Hello World (Private)",
       "description": "A hello world CakePHP application with no database hosted in a private repository. For more information about using this template, including OpenShift considerations, see https://github.com/willem-vanheemstrasystems/openshift-cakephp-hello-world-private/blob/master/README.md.",
       "tags": "quickstart,php,cakephp",
       "iconClass": "icon-php",
