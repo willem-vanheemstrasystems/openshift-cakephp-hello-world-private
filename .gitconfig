@@ -1,0 +1,11 @@
+#
+# This is the config file, and
+# a '#' or ';' character indicates
+# a comment
+#
+
+; HTTP
+[http]
+	sslVerify
+[http "https://preview.openshift.com"]
+	sslVerify = false
