@@ -93,6 +93,9 @@
             "uri": "${SOURCE_REPOSITORY_URL}",
             "ref": "${SOURCE_REPOSITORY_REF}"
           },
+          "sourceSecret": {
+            "name": "${SOURCE_SECRET_NAME}"
+          },
           "contextDir": "${CONTEXT_DIR}"
         },
         "strategy": {
@@ -107,6 +110,10 @@
               {
                 "name": "COMPOSER_MIRROR",
                 "value": "${COMPOSER_MIRROR}"
+              },
+              {
+                "name": "GIT_SSL_NO_VERIFY",
+                "value": "${GIT_SSL_NO_VERIFY}"
               }
             ]
           }
@@ -323,6 +330,12 @@
       "from": "[0-9]{30}"
     },
     {
+      "name": "SOURCE_SECRET_NAME",
+      "displayName": "Source Secret",
+      "description": "Source Secret name",   
+      "value": "scmsecret"
+    },
+    {
       "name": "OPCACHE_REVALIDATE_FREQ",
       "displayName": "OPcache Revalidation Frequency",
       "description": "How often to check script timestamps for updates, in seconds. 0 will result in OPcache checking for updates on every request.",
@@ -333,6 +346,12 @@
       "displayName": "Custom Composer Mirror URL",
       "description": "The custom Composer mirror URL",
       "value": ""
+    },
+    {
+      "name": "GIT_SSL_NO_VERIFY",
+      "displayName": "GIT SSL no verify boolean",
+      "description": "The GIT SSL no verify boolean",
+      "value": "true"
     }
   ]
 }
