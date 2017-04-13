@@ -7,5 +7,5 @@
 ; HTTP
 [http]
 	sslVerify
-[http "https://preview.openshift.com"]
+[http "https://api.preview.openshift.com"]
 	sslVerify = false
